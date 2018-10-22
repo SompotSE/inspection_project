@@ -7,6 +7,7 @@ class Knowledge extends Component {
         return(
             <div>
                 <pe>Knowledge </pe>
+                <h1>Open Page</h1>
             </div>
         );
     }
