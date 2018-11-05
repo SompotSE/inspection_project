@@ -6,11 +6,9 @@ import Footer from './Footer';
 class Home extends Component {
   render() {
     return (
-      <div>
-        <Header/>
-        <p>sfsdfshdjfhsdkfhkjsdhfkjashdkjfhakjdsfhkjasdhfkjahsdkfjhaskdjfhkjsadhfkjsahd</p>
-        <Footer/>
-      </div>
+          <center>
+          <img src="../img/icon.png" width="300" height="400"/> 
+          </center>
     );
   }
 }

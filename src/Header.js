@@ -1,39 +1,44 @@
 import React, {Component} from 'react';
-
-import {HashRouter,
+import { 
+    NavLink,
     Route,
-    Link
-} 
-from 'react-router-dom'
+    HashRouter
+ } from 'react-router-dom';
 
-import Home from "./Home"
+import Home from "./Home";
 import Knowledge from "./Knowledge";
-import Location from "./Location"
+import Location from "./Location";
 import Rank from "./Rank";
 import News from "./News";
 import login from "./login";
-
-// const MLink =({text,to}) => <class="topnav">
-// <a class="nav-link active" href={to}>{text}</a>
-
 class Header extends Component {
         render(){      
         return(
             <HashRouter>
-                <div class = "topnav">
-                <li><NavLinK to="/Home">Home</NavLinK></li>
-                <li><NavLinK to="/Knowledge">ความรู้เบื้องต้น</NavLinK></li>
-                <li><NavLinK to="/Location">สถานที่</NavLinK></li>
-                <li><NavLinK to="/Rank">จัดอันดับ</NavLinK></li>
-                <li><NavLinK to="/News">ข่าวประชาสัมพันธ์</NavLinK></li>
-                <li><NavLinK to="/Knowledge">Knowledge</NavLinK></li>
+            <div>
+              <div class = "topnav">
+                <li>
+                <NavLink exact to="/Home">Home</NavLink>
+                <NavLink exact to="/Knowledge">ความรู้เบื้องต้น</NavLink>
+                <NavLink exact to="/Location">สถานที่</NavLink>
+                <NavLink exact to="/Rank">จัดอันดับ</NavLink>
+                <NavLink exact to="/News">ข่าวประชาสัมพันธ์</NavLink>
                 <div class="topnav-right">
-                    <li><NavLinK to="/login">ลงชื่อเข้าใช้</NavLinK></li>
-                </div>
-                </div>
+                  <NavLink exact to="."><img src="../img/Profile.png"/></NavLink>
+                  <NavLink exact to="login">ลงชื่อเข้าใช้</NavLink>
+                  
+                </div></li>
+              </div>
+              <div className="content">
+              <Route exact path="/Home" component={Home}/>
+                  <Route exact path="/Knowledge" component={Knowledge}/>
+                  <Route exact path="/Location" component={Location}/>
+                  <Route exact path="/Rank" component={Rank}/>
+                  <Route exact path="/News" component={News}/>
+                  <Route exact path="/login" component={login}/>
+              </div>
+            </div>
             </HashRouter>
-
-
         );
     }
 }export default Header;
