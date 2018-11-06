@@ -8,6 +8,7 @@ class Rank extends Component {
             <div>
                 <pe>Rank </pe>
                 <p>จัดอันดับ</p>
+                <p>add pic</p>
             </div>
         );
     }
