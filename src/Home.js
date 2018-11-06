@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <pe>sfsdfshdjfhsdkfhkjsdhfkjashdkjfhakjdsfhkjasdhfkjahsdkfjhaskdjfhkjsadhfkjsahd</pe>
+        <pe>กรมการขนส่ง</pe>
       </div>
     );
   }
