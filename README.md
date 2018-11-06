@@ -1,4 +1,4 @@
-#ภาษาที่ใช้ในการพัฒนา
+# ภาษาที่ใช้ในการพัฒนา
 
 [![icon.png](https://i.postimg.cc/qqd2GwmV/icon.png)](https://postimg.cc/dk47s2P4)
 
