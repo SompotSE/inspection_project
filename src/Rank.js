@@ -7,6 +7,7 @@ class Rank extends Component {
         return(
             <div>
                 <pe>Rank </pe>
+                <p>จัดอันดับ</p>
             </div>
         );
     }
