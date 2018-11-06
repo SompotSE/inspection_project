@@ -1,9 +1,5 @@
 import React, {Component} from 'react';
-import { 
-    NavLink,
-    Route,
-    HashRouter
- } from 'react-router-dom';
+import { NavLink, Route, HashRouter } from 'react-router-dom';
 
 import Home from "./Home";
 import Knowledge from "./Knowledge";
@@ -20,7 +16,7 @@ class Header extends Component {
                 <li><NavLink exact to="/Home">Home</NavLink>
                 <NavLink exact to="/Knowledge">ความรู้เบื้องต้น</NavLink>
                 <NavLink exact to="/Location">สถานที่</NavLink>
-                <NavLink exact to="/Rank">จักอันดับ</NavLink>
+                <NavLink exact to="/Rank">จัดอันดับ</NavLink>
                 <NavLink exact to="/News">ข่าวประชาสัมพันธ์</NavLink>
                 <div class="topnav-right">
                   <NavLink exact to="login">ลงชื่อเข้าใช้</NavLink>
