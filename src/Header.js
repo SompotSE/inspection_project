@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { NavLink, Route, HashRouter } from 'react-router-dom';
+import { Button} from 'reactstrap';
 
 import Home from "./Home";
 import Knowledge from "./Knowledge";
@@ -8,7 +9,7 @@ import Rank from "./Rank";
 import News from "./News";
 import login from "./login";
 class Header extends Component {
-        render(){      
+        render(){       
         return(
             <HashRouter>
             <div>
@@ -19,6 +20,7 @@ class Header extends Component {
                 <NavLink exact to="/Rank">จัดอันดับ</NavLink>
                 <NavLink exact to="/News">ข่าวประชาสัมพันธ์</NavLink>
                 <div class="topnav-right">
+                  <NavLink exact to="."><img src="../img/Profile.png"/></NavLink>
                   <NavLink exact to="login">ลงชื่อเข้าใช้</NavLink>
                 </div></li>
               </div>
@@ -28,7 +30,7 @@ class Header extends Component {
                   <Route exact path="/Location" component={Location}/>
                   <Route exact path="/Rank" component={Rank}/>
                   <Route exact path="/News" component={News}/>
-                  <Route exact path="/login" component={login}/>
+                  <Route exact path="/login"  component={login}/>
               </div>
             </div>
             </HashRouter>
