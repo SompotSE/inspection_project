@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Form, FormGroup, Label, Input } from 'reactstrap';
 class login extends Component {
 
     constructor(props) {
@@ -13,7 +13,7 @@ class login extends Component {
 
     componentDidMount() {
         window.addEventListener('load', this.handleLoad);
-     }
+    }
 
     handleLoad() {
         this.setState({
@@ -48,7 +48,7 @@ class login extends Component {
                     </ModalBody>
                     <ModalFooter>
                         <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-                        <Button color="secondary" onClick={this.toggle}>Cancel</Button>
+                        <Button color="secondary" onClick={this.close}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
             </div>
