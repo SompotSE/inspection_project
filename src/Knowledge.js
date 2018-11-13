@@ -6,6 +6,7 @@ class Knowledge extends Component {
             <div>
                 <pe>Knowledge </pe>
                 <pe>ตรอ คือ ที่ตรวจสภาพรถ</pe>
+                <pe>ตรอ คือ </pe>
             </div>
         );
     }
