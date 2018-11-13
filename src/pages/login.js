@@ -13,7 +13,7 @@ class login extends Component {
 
     componentDidMount() {
         window.addEventListener('load', this.handleLoad);
-    }
+     }
 
     handleLoad() {
         this.setState({
