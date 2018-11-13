@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import { NavLink, Route, HashRouter } from 'react-router-dom';
-import { Button} from 'reactstrap';
 
 import Home from "./Home";
 import Knowledge from "./Knowledge";
