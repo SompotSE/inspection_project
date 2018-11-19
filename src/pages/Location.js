@@ -8,8 +8,9 @@ class Location extends Component {
             <div>
                 <pe>Location </pe>
                 <center>
-                    <Map google={this.props.google}
+                    {/* <Map google={this.props.google}
                         style={{ width: '80%', height: '80%', position: 'relative' }}
+<<<<<<< HEAD
                         zoom={12}
                         initialCenter={{
                             lat: 13.8185021,
@@ -38,12 +39,22 @@ class Location extends Component {
                         <Marker name={'ตรอ.อัครวิทย์'} position={{ lat: 14.121965, lng: 100.53799 }} />
                         {/* <Setlocation /> */}
                     </Map>
+=======
+                        zoom={14}>
+                    </Map> */}
+>>>>>>> 405a81d9f3c97d7cea9ca705cacb817333cc393e
                 </center>
             </div >
         );
     }
 }
 
+<<<<<<< HEAD
 export default GoogleApiWrapper({
     apiKey: ("AIzaSyAFHTcbUykLDkXfK19GoXmm8EltWUbq9dM")
 })(Location)
+=======
+// export default GoogleApiWrapper({
+//      apiKey: ("AIzaSyDwUy4FtOC4ecPk8M7stYvqur-YPfrGFhA")
+// }) (Location)
+>>>>>>> 405a81d9f3c97d7cea9ca705cacb817333cc393e
