@@ -26,7 +26,6 @@ class App extends Component {
             <div className="navbar-end">
               {/* <img src={Profile} width="40" height="40" /> */}
               <CardImg  src={require('./img/Profile.png')}  />
-              <img src={'./img/Profile.png'} />
               <NavLink to="/login" activeClassName="is-active" className="navbar-item" data-target="#myModal" >ลงชื่อเข้าใช้</NavLink>
               
             </div>
