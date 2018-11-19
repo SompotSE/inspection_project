@@ -2,23 +2,22 @@ import React, {Component} from 'react';
 import { Card, CardImg, CardText, CardBody, CardLink,
     CardTitle, CardSubtitle,CardDeck } from 'reactstrap';
 const CardEx = ({title,subtitle,path,text})=><div>
-    <center>
-    <Card style={{ backgroundColor: 'white'  }}>
-        <CardBody>
-        <CardTitle>{title}</CardTitle>
-        <CardSubtitle>{subtitle}</CardSubtitle>
-        </CardBody>
-        <img width="60%" src={path} alt="pic1" />
-        <CardBody>
-        <CardText>{text}</CardText>
-        <CardLink href="#">Read more--></CardLink>
-        </CardBody>
-    </Card> 
+    <td width="300px">
+    <center>        
+        <Card style={{ backgroundColor: 'white'  }}>
+            <CardBody>
+            <CardTitle>{title}</CardTitle>
+            <CardSubtitle>{subtitle}</CardSubtitle>
+            </CardBody>
+            <img width="95%" src={path} alt="pic1" />
+            <CardBody>
+            <CardText>{text}</CardText>
+            <CardLink href="#">Read more--></CardLink>
+            </CardBody>
+        </Card> 
     </center>
+    </td>
     </div>
-    
-
-
 class Knowledge extends Component {
     render(){
         return(
@@ -26,61 +25,49 @@ class Knowledge extends Component {
             <center>
             <table width="1000px" >
                 <tr>
-                    <td>
                         <CardEx 
                             title="ขั้นตอนที่ 1" 
-                            subtitle = "การเช็คสภาพ"  
-                            path = {require('../img/TRO.png')} 
-                            text= "dd" 
+                            subtitle = "วิธีการทอสอบศูนย์ล้อหน้า"  
+                            path = {require('../img/kl/1.jpg')} 
+                            text= "dd"
                         />
-                    </td>
-                    <td width="20px"></td>
-                    <td>
+                    <td width="10px"></td>           
                         <CardEx 
                             title="ขั้นตอนที่ 2" 
-                            subtitle = "เช็คศูนย์ล้อ"  
-                            path = {require('../img/TRO.png')} 
+                            subtitle = "วิธีการตรวจวัดโคมไฟหน้า"  
+                            path = {require('../img/kl/2.jpg')} 
                             text= "dbb" 
-                        />
-                    </td>
-                    <td width="20px"></td>
-                    <td>
+                        />                    
+                    <td width="10px"></td>                    
                         <CardEx 
                             title="ขั้นตอนที่ 3" 
-                            subtitle = "เช็คศูนย์ล้อ"  
-                            path = {require('../img/TRO.png')} 
+                            subtitle = "วิธีการตรวจวัดค่าควันดำ"  
+                            path = {require('../img/kl/3.jpg')} 
                             text= "dasdf" 
-                        />
-                    </td>
+                        />                    
                 </tr>
                 <tr ><td colSpan="3">.</td></tr>
-                <tr>
-                    <td>
+                <tr>                    
                         <CardEx 
                             title="ขั้นตอนที่ 4" 
-                            subtitle = "การเช็คสภาพ"  
-                            path = {require('../img/TRO.png')} 
+                            subtitle = "วิธีการตรวจวัดระดับเสียง"  
+                            path = {require('../img/kl/4.jpg')} 
                             text= "dd" 
-                        />
-                    </td>
-                    <td width="20px"></td>
-                    <td>
+                        />                    
+                    <td width="10px"></td>                    
                         <CardEx 
                             title="ขั้นตอนที่ 5" 
-                            subtitle = "เช็คศูนย์ล้อ"  
-                            path = {require('../img/TRO.png')} 
+                            subtitle = "วิธีการตรวจวัดค่าก๊าซคาร์บอนาอนนอกไซด์"  
+                            path = {require('../img/kl/5.jpg')} 
                             text= "dbb" 
-                        />
-                    </td>
-                    <td width="20px"></td>
-                    <td>
+                        />                    
+                    <td width="10px"></td>                    
                         <CardEx 
                             title="ขั้นตอนที่ 6" 
-                            subtitle = "เช็คศูนย์ล้อ"  
-                            path = {require('../img/TRO.png')} 
+                            subtitle = "วงจรตรวจพินิจรถยนต์"  
+                            path = {require('../img/kl/6.jpg')} 
                             text= "dasdf" 
-                        />
-                    </td>
+                        />                    
                 </tr>
             </table>
             </center>
