@@ -38,4 +38,18 @@ svg {
 }
 .modal-footer {
   background-color: #f9f9f9;
+  
+}
+
+.headtable{
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  color:rgb(226, 60, 60) !important;
+}
+
+.titletable{
+  text-align: center;
+  font-size: 25px;
+  color:rgb(0, 0, 0) !important;
 }

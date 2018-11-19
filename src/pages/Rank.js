@@ -8,15 +8,15 @@ class Rank extends Component {
             <div>
                 <center>
                     <p></p>
-                    <pe><h2>อันดับ ตรอ ประจำเดือนธันวาคม 2561</h2></pe>
+                    <marquee behavior="alternate" width="50%"><pe className = "headtable">อันดับ ตรอ ประจำเดือนธันวาคม 2561</pe></marquee>
 
-                    <br></br>
+                    <br></br><br></br>
                     <table border="1" style={{ backgroundColor: 'white' }} bordercolor="gray">
-                        <tr ><td width="300" ><center>ชื่อ ตรอ</center></td>
-                            <td width="200" ><center>คะแนน</center></td>
+                        <tr ><td width="300" className = "titletable">ชื่อ ตรอ</td>
+                            <td width="200" className = "titletable">คะแนน</td>
                         </tr>
-                        <tr><td width="300" ><center>ตรอ ลอร่าวัน</center></td>
-                            <td width="200" ><center>******</center></td>
+                        <tr><td width="300" >ตรอ ลอร่าวัน</td>
+                            <td width="200" >******</td>
                         </tr>
 
 
