@@ -9,16 +9,16 @@ class Location extends Component {
             <div>
                 <pe>Location </pe>
                 <center>
-                    <Map google={this.props.google}
+                    {/* <Map google={this.props.google}
                         style={{ width: '80%', height: '80%', position: 'relative' }}
                         zoom={14}>
-                    </Map>
+                    </Map> */}
                 </center>
             </div>
         );
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: ("AIzaSyDwUy4FtOC4ecPk8M7stYvqur-YPfrGFhA")
-}) (Location)
+// export default GoogleApiWrapper({
+//      apiKey: ("AIzaSyDwUy4FtOC4ecPk8M7stYvqur-YPfrGFhA")
+// }) (Location)
