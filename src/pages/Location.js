@@ -16,18 +16,16 @@ class Location extends Component {
             <div>
                 <pe>Location </pe>
                 <center>
-                    <Map google={this.props.google}
+                    {/* <Map google={this.props.google}
                         style={{ width: '80%', height: '80%', position: 'relative' }}
                         zoom={14}>
-                        {/* <SetMar latSet="13.8185021" lntSet = "100.5141232" /> */}
-                        <SetMar />
-                    </Map>
+                    </Map> */}
                 </center>
             </div>
         );
     }
 }
 
-export default GoogleApiWrapper({
-    apiKey: ("AIzaSyAFHTcbUykLDkXfK19GoXmm8EltWUbq9dM")
-}) (Location)
+// export default GoogleApiWrapper({
+//      apiKey: ("AIzaSyDwUy4FtOC4ecPk8M7stYvqur-YPfrGFhA")
+// }) (Location)
