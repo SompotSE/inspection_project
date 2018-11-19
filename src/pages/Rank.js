@@ -9,15 +9,17 @@ class Rank extends Component {
                 <center>
                     <p></p>
                     <pe><h2>อันดับ ตรอ ประจำเดือนธันวาคม 2561</h2></pe>
-                    <p></p>
-                    <table border="1">
-                        <tr><td width = "300" align="center"><b>ชื่อ ตรอ</b></td>
-                            <td width = "200" align="center"><b>คะแนน</b></td>
+
+                    <br></br>
+                    <table border="1" style={{ backgroundColor: 'white' }} bordercolor="gray">
+                        <tr ><td width="300" ><center>ชื่อ ตรอ</center></td>
+                            <td width="200" ><center>คะแนน</center></td>
                         </tr>
-                        <tr><td width = "300" align="center">ตรอ ลอร่าวัน</td>
-                            <td width = "200" align="center">******</td>
+                        <tr><td width="300" ><center>ตรอ ลอร่าวัน</center></td>
+                            <td width="200" ><center>******</center></td>
                         </tr>
-                        
+
+
 
                     </table>
                 </center>
