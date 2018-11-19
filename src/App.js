@@ -18,11 +18,11 @@ class App extends Component {
               <NavLink to="/Knowledge" activeClassName="is-active" className="navbar-item">ความรู้เบื้องต้น</NavLink>
               <NavLink to="/Location" activeClassName="is-active" className="navbar-item">สถานที่</NavLink>
               <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">จัดอันดับ</NavLink>
-              <NavLink to="/News" activeClassName="is-active" className="navbar-item">ข่าวประชาสัมพันธ์</NavLink>            </div>
+              <NavLink to="/News" activeClassName="is-active" className="navbar-item">ข่าวประชาสัมพันธ์</NavLink>            
+            </div>
             <div className="navbar-end">
               <table><tr><td width="40px"><img src={require('./img/Profile.png')} /></td></tr></table>
               <NavLink to="/login" activeClassName="is-active" className="navbar-item" data-target="#myModal" >ลงชื่อเข้าใช้</NavLink>
-              
             </div>
           </div>
         </nav>
