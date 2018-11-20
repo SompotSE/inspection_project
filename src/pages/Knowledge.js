@@ -12,7 +12,7 @@ const CardEx = ({title,subtitle,path,text})=><div>
             <img width="95%" src={path} alt="pic1" />
             <CardBody>
             <CardText>{text}</CardText>
-            <CardLink href="#">Read more--></CardLink>
+            <right><CardLink href="#">Read more--></CardLink></right>
             </CardBody>
         </Card> 
     </center>
@@ -23,7 +23,8 @@ class Knowledge extends Component {
         return(
             <div>
             <center>
-            <table width="1000px" >
+            <table width="1000px" border="0" >
+                <tr><td colSpan="5"><center><img src={require('../img/kl/title.png')}/> </center></td></tr>
                 <tr>
                         <CardEx 
                             title="ขั้นตอนที่ 1" 
@@ -46,7 +47,7 @@ class Knowledge extends Component {
                             text= "dasdf" 
                         />                    
                 </tr>
-                <tr ><td colSpan="3">.</td></tr>
+                <tr ><td colSpan="5">.</td></tr>
                 <tr>                    
                         <CardEx 
                             title="ขั้นตอนที่ 4" 

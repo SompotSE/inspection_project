@@ -3,9 +3,12 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   background-image:url('./img/BG1.jpg');
+  
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 svg {
