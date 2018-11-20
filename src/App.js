@@ -28,7 +28,6 @@ class App extends Component {
         </nav>
 
         <Routing />
-          {/* <CardImg  src={require('./img/TRO.png')}  />         */}
         <Footer />
 
       </div>
