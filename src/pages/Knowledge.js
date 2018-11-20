@@ -12,7 +12,7 @@ const CardEx = ({title,subtitle,path,text})=><div>
             <img width="95%" src={path} alt="pic1" />
             <CardBody>
             <CardText>{text}</CardText>
-            <CardLink href="#">Read more--></CardLink>
+            <right><CardLink href="#">Read more--></CardLink></right>
             </CardBody>
         </Card> 
     </center>
