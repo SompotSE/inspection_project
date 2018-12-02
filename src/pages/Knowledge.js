@@ -21,7 +21,7 @@ const CardEx = ({title,subtitle,path,text})=><div>
 class Knowledge extends Component {
     render(){
         return(
-            <div>
+            <div style={{  height: '1100px' }}>
             <center>
             <table width="1000px" border="0" >
                 <tr><td colSpan="5"><center><img src={require('../img/kl/title.png')}/> </center></td></tr>
