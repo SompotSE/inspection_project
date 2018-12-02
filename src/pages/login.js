@@ -9,7 +9,7 @@ class login extends Component {
                         <tr>
                             <td >
                                 <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="130px" alt="Piclogin"/>
+                                    <img src={require('../img/hulogin.png')} width="730px" height="130px" alt="Piclogin" />
                                 </center>
                             </td>
                         </tr>
@@ -21,6 +21,14 @@ class login extends Component {
                         <tr>
                             <td>
                                 Password <input type="password" class="form-control" id="user" name="password" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <center>
+                                    <br/>
+                                    <button type="button" class="btn btn-success">Summit</button>
+                                </center>
                             </td>
                         </tr>
 

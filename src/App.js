@@ -3,9 +3,6 @@ import { NavLink } from 'react-router-dom'
 import Routing from './routes'
 import Footer from './Footer'
 import TRO from './img/TRO.png'
-import './form.css';
-
-
 
 class App extends Component {
   
