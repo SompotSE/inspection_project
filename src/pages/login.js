@@ -9,7 +9,7 @@ class login extends Component {
                         <tr>
                             <td >
                                 <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="130px"/>
+                                    <img src={require('../img/hulogin.png')} width="730px" height="130px" alt="Piclogin"/>
                                 </center>
                             </td>
                         </tr>

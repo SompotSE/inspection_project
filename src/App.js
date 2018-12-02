@@ -2,9 +2,13 @@ import React, { Component } from 'react'
 import { NavLink } from 'react-router-dom'
 import Routing from './routes'
 import Footer from './Footer'
-import TRO from './img/TRO.png';
+import TRO from './img/TRO.png'
+import './form.css';
+
+
 
 class App extends Component {
+  
   render() {
     return (
       <div className="my-app">
