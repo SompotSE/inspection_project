@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import Home from "../pages/Home";
 import Knowledge from "../pages/Knowledge";
- import Location from "../pages/Location";
+import Location from "../pages/Location";
 import Rank from "../pages/Rank";
 import News from "../pages/News";
 import login from "../pages/login";
