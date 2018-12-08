@@ -4,6 +4,7 @@ import Routing from './routes'
 import Footer from './Footer'
 import TRO from './img/TRO.png'
 
+
 class App extends Component {
   
   render() {
@@ -19,7 +20,8 @@ class App extends Component {
               <NavLink to="/Knowledge" activeClassName="is-active" className="navbar-item">ความรู้เบื้องต้น</NavLink>
               <NavLink to="/Location" activeClassName="is-active" className="navbar-item">สถานที่</NavLink>
               <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">จัดอันดับ</NavLink>
-              <NavLink to="/News" activeClassName="is-active" className="navbar-item">ข่าวประชาสัมพันธ์</NavLink>            
+              <NavLink to="/News" activeClassName="is-active" className="navbar-item">ข่าวประชาสัมพันธ์</NavLink>       
+              <NavLink to="/TestPopup" activeClassName="is-active" className="navbar-item">ทดสอบ</NavLink>     
             </div>
             <div className="navbar-end">
               <table><tr><td width="40px"><img src={require('./img/Profile.png')} /></td></tr></table>
