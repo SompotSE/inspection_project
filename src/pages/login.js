@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
+import Register from "./Register";
 
 class login extends Component {
     render() {
@@ -26,7 +28,9 @@ class login extends Component {
                         <tr>
                             <td>
                                 <center>
-                                    <br/>
+                                    <br />
+                                    <NavLink to="/Register"><button type="button" class="btn btn">Sign Up</button></NavLink>
+
                                     <button type="button" class="btn btn-success">Summit</button>
                                 </center>
                             </td>
