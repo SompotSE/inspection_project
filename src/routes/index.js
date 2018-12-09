@@ -7,10 +7,6 @@ import Location from "../pages/Location";
 import Rank from "../pages/Rank";
 import News from "../pages/News";
 import login from "../pages/login";
-<<<<<<< HEAD
-import ModalExample from "../pages/ModalExample";
-import 'bootstrap/dist/css/bootstrap.min.css';
-=======
 import Register from "../pages/Register";
 import ModalExample from "../pages/TestPopup";
 import 'bootstrap/dist/css/bootstrap.min.css';
