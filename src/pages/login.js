@@ -10,7 +10,7 @@ class login extends Component {
                         <tr>
                             <td >
                                 <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="350px" alt="Piclogin" />
+                                    <img src={require('../img/hulogin.png')} width="730px" height="450px" alt="Piclogin" />
                                 </center>
                             </td>
                         </tr>
@@ -28,7 +28,9 @@ class login extends Component {
                             <td>
                                 <center>
                                     <br />
-                                    <NavLink to="/Register"><button type="button" class="btn btn">Sign Up</button></NavLink>
+                                    <NavLink to="/Register">
+                                    <button type="button" class="btn btn-primary">Sign Up</button>
+                                    </NavLink>
 
                                     <button type="button" class="btn btn-success">Summit</button>
                                 </center>

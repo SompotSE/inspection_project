@@ -80,6 +80,7 @@ class App extends Component {
         </header>
 
         <Routing />
+        <br/><br/>
         <Footer />
       </div>
     )
