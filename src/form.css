@@ -3,9 +3,12 @@ body {
   padding: 0;
   font-family: 'Quicksand', sans-serif;
   background-image:url('./img/BG1.jpg');
+  
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* width: 100vw;
+  height: 100vh; */
 }
 
 svg {
@@ -38,4 +41,18 @@ svg {
 }
 .modal-footer {
   background-color: #f9f9f9;
+  
+}
+
+.headtable{
+  background-color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  color:rgb(226, 60, 60) !important;
+}
+
+.titletable{
+  text-align: center;
+  font-size: 25px;
+  color:rgb(0, 0, 0) !important;
 }
