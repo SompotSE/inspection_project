@@ -9,6 +9,8 @@ class Home extends Component {
         <center>
         <img src={icon} width="900" height="400"/>
         </center>
+
+        
       </div>
     );
   }

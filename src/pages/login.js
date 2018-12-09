@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
-import Register from "./Register";
 
 class login extends Component {
     render() {
@@ -11,7 +10,7 @@ class login extends Component {
                         <tr>
                             <td >
                                 <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="130px" alt="Piclogin" />
+                                    <img src={require('../img/hulogin.png')} width="730px" height="350px" alt="Piclogin" />
                                 </center>
                             </td>
                         </tr>

@@ -11,12 +11,12 @@ app.use(express.static('../public'))
 
 app.use(morgan('short'))
 
-app.post('/user_create', (reg, res) => {
+app.post('/user_create', (req, res) => {
     console.log("Trying to create a new user....")
     console.log("How do we get the form data???")
 
 
-    console.log("First name: " + req.body.first_name)
+    console.log("First name: " + req.body.create_first_name)
     const firstName = req.body.create_first_name
     const lastName = req.body.create_last_name
 
