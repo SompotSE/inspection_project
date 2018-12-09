@@ -3,8 +3,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 1920px;
-  height: 935px;
+  /* width: 1920px;
+  height: 935px; */
 }
 
 svg {
@@ -51,4 +51,8 @@ svg {
   text-align: center;
   font-size: 25px;
   color:rgb(0, 0, 0) !important;
+}
+.tableK{
+  background-color: #ffffff;
+  opacity: 0.9;
 }

@@ -8,11 +8,14 @@ import Rank from "../pages/Rank";
 import News from "../pages/News";
 import login from "../pages/login";
 import Register from "../pages/Register";
-import ModalExample from "../pages/TestPopup";
+import ModalExample2 from "../pages/TestPopup";
+import ModalExample from "../pages/ModalExample";
 import 'bootstrap/dist/css/bootstrap.min.css';
-
-
->>>>>>> 9b04ddc262dee02543be903a6cae9f836a39e30a
+import Knowledge1 from "../pages/Knowledge1";
+import Knowledge2 from "../pages/Knowledge2";
+import Knowledge3 from "../pages/Knowledge3";
+import Knowledge4 from "../pages/Knowledge4";
+import Knowledge5 from "../pages/Knowledge5";
 
 export default () => (
     <Switch>
@@ -22,11 +25,14 @@ export default () => (
       <Route exact path="/Rank" component={Rank} />
       <Route exact path="/News" component={News} />
       <Route exact path="/login" component={login} />
-<<<<<<< HEAD
       <Route exact path="/test" component={ModalExample} />
-=======
       <Route exact path="/Register" component={Register} />
-      <Route exact path="/TestPopup" component={ModalExample} />
->>>>>>> 9b04ddc262dee02543be903a6cae9f836a39e30a
+      <Route exact path="/TestPopup" component={ModalExample2} />
+      <Route exact path="/Knowledge/1" component={Knowledge1} />
+      <Route exact path="/Knowledge/2" component={Knowledge2} />
+      <Route exact path="/Knowledge/3" component={Knowledge3} />
+      <Route exact path="/Knowledge/4" component={Knowledge4} />
+      <Route exact path="/Knowledge/5" component={Knowledge5} />
+
     </Switch>
   )
