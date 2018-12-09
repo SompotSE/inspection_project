@@ -1,6 +1,5 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText, Container, Row, Col } from 'reactstrap';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 export default class Register extends React.Component {
     render() {
@@ -28,19 +27,12 @@ export default class Register extends React.Component {
                                 <option>Doctor Degrees</option>
                             </Input>
                         </FormGroup>
-
-                        <FormGroup>
-                            <Label for="exampleFile">Profile Picture</Label>
-                            <Input type="file" name="file" id="exampleFile" />
-                            <FormText color="muted">
-                                Photos you upload will be profile photos
-                            </FormText>
-                        </FormGroup>
+                        
                         <FormGroup tag="fieldset">
                             <legend>Gender</legend>
                             <FormGroup check>
                                 <Label check>
-                                    <Input type="radio" name="radio1" />{' '}<p>Men</p>
+                                    <Input type="radio" name="radio1" />{' '}
                                     Men
             </Label>
                             </FormGroup>
@@ -52,6 +44,15 @@ export default class Register extends React.Component {
                             </FormGroup>
 
                         </FormGroup>
+
+                        <FormGroup>
+                            <Label for="exampleFile">Profile Picture</Label>
+                            <Input type="file" name="file" id="exampleFile" />
+                            <FormText color="muted">
+                                Photos you upload will be profile photos
+                            </FormText>
+                        </FormGroup>
+                        
                         <Button>Submit</Button>
                     </Form></Col>
                 </Row>

@@ -39,7 +39,7 @@ class Rank extends Component {
                         </tr>
                         <tr><td width="300" ><center>ตรอ ลอร่าวัน</center></td>
                             <td width="200" ><center><h5>{this.state.count}</h5></center></td>
-                            <td><center><button onClick={this.changVote}>{this.state.megsage}</button></center></td>
+                            <td><center><button type="button" class="btn btn-success" onClick={this.changVote}>{this.state.megsage}</button></center></td>
                         </tr>
                         
                     </table>
