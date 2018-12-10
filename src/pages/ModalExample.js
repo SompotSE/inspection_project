@@ -2,53 +2,29 @@ import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
 
 class ModalExample extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      modal: false,
-      backdrop: true
-    };
-
-    this.toggle = this.toggle.bind(this);
-    this.changeBackdrop = this.changeBackdrop.bind(this);
-  }
-
-  toggle() {
-    this.setState({
-      modal: !this.state.modal
-    });
-  }
-
-  changeBackdrop(e) {
-    let value = e.target.value;
-    if (value !== 'static') {
-      value = JSON.parse(value);
-    }
-    this.setState({ backdrop: value });
-  }
-
   render() {
     return (
-      <div>
-        <a onClick={this.toggle}>readmore--></a>
-        <Form inline onSubmit={(e) => e.preventDefault()}>
-          <FormGroup>
-            <Label for="backdrop">Backdrop value</Label>{' '}
-          </FormGroup>
-          {' '}
-          <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+      <div class="w3-container">
+        <h2>W3.CSS Modal</h2>
+        <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
+        <button onclick={"document.getElementById('id01').style.display='block'"} class="w3-button w3-black">Open Modal</button>
 
-        </Form>
-        <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
-          <ModalHeader toggle={this.toggle}>ขั้นตอนที่2</ModalHeader>
-          <ModalBody>
-            ขั้นตอนที่2
-          </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
-          </ModalFooter>
-        </Modal>
+        <div id="id01" class="w3-modal">
+          <div class="w3-modal-content">
+            <header class="w3-container w3-teal">
+              <span onclick="document.getElementById('id01').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+              <h2>Modal Header</h2>
+            </header>
+            <div class="w3-container">
+              <p>Some text..</p>
+              <p>Some text..</p>
+            </div>
+            <footer class="w3-container w3-teal">
+              <p>Modal Footer</p>
+            </footer>
+          </div>
+        </div>
       </div>
     );
   }

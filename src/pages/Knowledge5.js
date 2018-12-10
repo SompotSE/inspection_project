@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-
 class Knowledge1 extends Component {
   render() {
     return (
