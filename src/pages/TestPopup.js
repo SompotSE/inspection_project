@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
 
-class ModalExample extends React.Component {
+class ModalExample2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +29,7 @@ class ModalExample extends React.Component {
 
   render() {
     return (
-      <div>
+      <div>        
         <Form inline onSubmit={(e) => e.preventDefault()}>
           <FormGroup>
             <Label for="backdrop">Backdrop value</Label>{' '}
@@ -40,7 +40,10 @@ class ModalExample extends React.Component {
             </Input>
           </FormGroup>
           {' '}
-          <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+          <Button color="danger" onClick={this.toggle}>
+          Modal{this.props.buttonLabel}
+          </Button>
+          
         </Form>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className} backdrop={this.state.backdrop}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
@@ -57,4 +60,4 @@ class ModalExample extends React.Component {
   }
 }
 
-export default ModalExample;
+export default ModalExample2;

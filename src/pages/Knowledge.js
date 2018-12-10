@@ -1,79 +1,82 @@
-import React, {Component} from 'react';
-import { Card, CardImg, CardText, CardBody, CardLink,
-    CardTitle, CardSubtitle,CardDeck } from 'reactstrap';
-const CardEx = ({title,subtitle,path,text})=><div>
-    <td width="300px">
-    <center>        
-        <Card style={{ backgroundColor: 'white'  }}>
-            <CardBody>
-            <CardTitle>{title}</CardTitle>
-            <CardSubtitle>{subtitle}</CardSubtitle>
-            </CardBody>
-            <img width="95%" src={path} alt="pic1" />
-            <CardBody>
-            <CardText>{text}</CardText>
-            <right><CardLink href="#">Read more--></CardLink></right>
-            </CardBody>
-        </Card> 
-    </center>
+import React, { Component } from 'react';
+import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
+import Knowledge1 from './Knowledge1';
+import Knowledge2 from './Knowledge2';
+import Knowledge3 from './Knowledge3';
+import Knowledge4 from './Knowledge4';
+import Knowledge5 from './Knowledge5';
+
+const CardEx = ({ title, subtitle, path, text, plink }) => <div>
+    <td >
+        <center>
+            <Card style={{ backgroundColor: 'white' }}>
+                <CardBody>
+                    {/* <CardTitle>{title}</CardTitle> */}
+                    <CardSubtitle>{subtitle}</CardSubtitle>
+                </CardBody>
+                <NavLink to={plink}>
+                    <img width="100%" src={path} alt={title} />
+                </NavLink>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target={plink}>คลิกเพื่ออ่าน</button>
+            </Card>
+        </center>
     </td>
-    </div>
-class Knowledge extends Component {
-    render(){
-        return(
+</div>
+class Knowledge extends React.Component {
+    render() {
+        return (
             <div>
-            <center>
-            <table width="1000px" border="0" >
-                <tr><td colSpan="5"><center><img src={require('../img/kl/title.png')}/> </center></td></tr>
-                <tr>
-                        <CardEx 
-                            title="ขั้นตอนที่ 1" 
-                            subtitle = "วิธีการทอสอบศูนย์ล้อหน้า"  
-                            path = {require('../img/kl/1.jpg')} 
-                            text= "dd"
-                        />
-                    <td width="10px"></td>           
-                        <CardEx 
-                            title="ขั้นตอนที่ 2" 
-                            subtitle = "วิธีการตรวจวัดโคมไฟหน้า"  
-                            path = {require('../img/kl/2.jpg')} 
-                            text= "dbb" 
-                        />                    
-                    <td width="10px"></td>                    
-                        <CardEx 
-                            title="ขั้นตอนที่ 3" 
-                            subtitle = "วิธีการตรวจวัดค่าควันดำ"  
-                            path = {require('../img/kl/3.jpg')} 
-                            text= "dasdf" 
-                        />                    
-                </tr>
-                <tr ><td colSpan="5">.</td></tr>
-                <tr>                    
-                        <CardEx 
-                            title="ขั้นตอนที่ 4" 
-                            subtitle = "วิธีการตรวจวัดระดับเสียง"  
-                            path = {require('../img/kl/4.jpg')} 
-                            text= "dd" 
-                        />                    
-                    <td width="10px"></td>                    
-                        <CardEx 
-                            title="ขั้นตอนที่ 5" 
-                            subtitle = "วิธีการตรวจวัดค่าก๊าซคาร์บอนาอนนอกไซด์"  
-                            path = {require('../img/kl/5.jpg')} 
-                            text= "dbb" 
-                        />                    
-                    <td width="10px"></td>                    
-                        <CardEx 
-                            title="ขั้นตอนที่ 6" 
-                            subtitle = "วงจรตรวจพินิจรถยนต์"  
-                            path = {require('../img/kl/6.jpg')} 
-                            text= "dasdf" 
-                        />                    
-                </tr>
-            </table>
-            </center>
+                <center><img width="40%" src={require('../img/imgknowledge/title.png')} alt="title" /> </center>
+                <center>
+                    <table width="90%" border="0" >
+                        <tr>
+                            <CardEx
+                                title="ขั้นตอนที่ 1"
+                                subtitle="การตรวจสอบความถูกต้องของตัวรถและเอกสารเบื้องต้น"
+                                path={require('../img/imgknowledge/1.jpg')}
+                                text="dd"
+                                plink={".No1"}
+
+                            />
+                            <td width="10px"></td>
+                            <CardEx
+                                title="ขั้นตอนที่ 2"
+                                subtitle="การตรวจพินิจภายนอกตัวรถ และเรื่องอุปกรณ์ความปลอดภัย"
+                                path={require('../img/imgknowledge/2.jpg')}
+                                text="dbb"
+                                plink={".No2"}
+                            />
+                            <td width="10px"></td>
+                            <CardEx
+                                title="ขั้นตอนที่ 3"
+                                subtitle="การทดสอบศูนย์ล้อหน้า และ การทดสอบการห้ามล้อ "
+                                path={require('../img/imgknowledge/3.jpg')}
+                                text="dasdf"
+                                plink={".No3"}
+                            />
+                            <td width="10px"></td>
+                            <CardEx
+                                title="ขั้นตอนที่ 4"
+                                subtitle="การตรวจวัดโคมไฟหน้า และ การตรวจวัดระดับเสียงจากท่อไอเสีย"
+                                path={require('../img/imgknowledge/4.jpg')}
+                                text="dd"
+                                plink={".No4"}
+                            />
+                            <td width="10px"></td>
+                            <CardEx
+                                title="ขั้นตอนที่ 5"
+                                subtitle="วิธีการตรวจวัดค่า CO HC และ การตรวจวัดค่าควันดำ"
+                                path={require('../img/imgknowledge/5.jpg')}
+                                text="dbb"
+                                plink={".No5"}
+                            />
+                        </tr>
+                    </table>
+                </center>
+                
+                            <Knowledge1 /> <Knowledge2 /><Knowledge3 /><Knowledge4 /><Knowledge5 />
             </div>
-            
         );
     }
 }
