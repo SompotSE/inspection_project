@@ -66,7 +66,7 @@ export default class Register extends React.Component {
                                             <Button>Submit</Button>
                                         </center>
                                     </Form>
-                                    <br />
+                                    <br /><br /><br /><br /><br />
                                 </div>
                             </div>
                         </Col>
