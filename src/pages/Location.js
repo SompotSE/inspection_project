@@ -6,6 +6,11 @@ class Location extends Component {
     render() {
         return (
             <div>
+                <br />
+                <center>
+                    <img width="30%" src={require('../img/location.png')} alt="title" />
+                </center>
+                <br />
                 <center>
                     <Map google={this.props.google}
                         style={{ width: '80%', height: '80%', position: 'relative' }}
@@ -53,6 +58,9 @@ class Location extends Component {
                         {/*<Setlocation /> */}
                     </Map>
                 </center>
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+                <br /><br /><br />
             </div >
         );
     }
@@ -61,4 +69,4 @@ class Location extends Component {
 export default GoogleApiWrapper({
     apiKey: ("AIzaSyAFHTcbUykLDkXfK19GoXmm8EltWUbq9dM")
 })(Location)
-    
+

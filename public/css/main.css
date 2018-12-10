@@ -538,6 +538,7 @@ iframe {
 .topbar {
   height: 45px;
   background-color: #9900CC;
+  color: #00bbec;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -566,8 +567,8 @@ iframe {
 }
 
 .topbar-social-item {
-  font-size: 18px;
-  color: #888888;
+  font-size: 28px;
+  color: #ffffff;
   padding: 10px;
 }
 
@@ -575,8 +576,8 @@ iframe {
 .topbar-email,
 .topbar-child1 {
   font-family: Montserrat-Regular;
-  font-size: 13px;
-  color: #888888;
+  font-size: 15px;
+  color: #dddddd;
   line-height: 1.7;
 }
 
@@ -2346,4 +2347,40 @@ input.num-product::-webkit-inner-spin-button {
     margin: 0; 
 }
 
+/* [page Knowlege] 
+/////////////////////////////////////////////////////////// */
+.fwhite{
+  color: #000000;
+  font-size: 15px
+}
+.bgtover{
+  background-color: #ffffff;
+  opacity: 0;
+}
+.bgtover:hover{  
+  opacity: 0.9;
+}
 
+/*[page signup]
+/////////////////////////////////////////////////////////// */
+.cardSignUp {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  /* background-color: #ffffff; */
+  width: 60%;
+}
+
+.cardSignUp:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.658);
+  
+}
+
+.containerSignUp {
+  padding: 2px 16px;
+}
+
+/*[page signup]
+/////////////////////////////////////////////////////////// */
+.bgBoMo{
+  background-color: #ebebeb;
+}

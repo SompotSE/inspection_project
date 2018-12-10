@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import icon from '../img/icon.png';
 
 class Home extends Component {
   render() {
@@ -32,36 +31,29 @@ class Home extends Component {
           </a>
         </div>
 
-        <section class="shipping bgwhite p-t-62 p-b-46">
+        <section class="shipping bgwhite p-t-20 ">
           <div class="flex-w p-l-15 p-r-15">
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
+            <img width="20%" src={require('../img/home/T1.png')} alt="title" />
               <h7 class="m-text12 t-center">
-                Free Delivery Worldwide
+                ใส่ใจบริการ
 				</h7>
 
               <span class="s-text11 t-center">
-                Simply return it within 30 days for an exchange.
+                บริการทุกระดับประทับใจ
 				</span>
             </div>
 
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 bo2 respon2">
-              <h7 class="m-text12 t-center">
-                30 Days Return
-				</h7>
-
-              <span class="s-text11 t-center">
-                Simply return it within 30 days for an exchange.
-				</span>
+            <img width="20%" src={require('../img/home/T2.png')} alt="title" />
+              <h7 class="m-text12 t-center">ช่างมีประสบการณ์</h7>
+              <span class="s-text11 t-center">ดูแลโดยผู้เชียวชาญฝีมือดี</span>
             </div>
 
             <div class="flex-col-c w-size5 p-l-15 p-r-15 p-t-16 p-b-15 respon1">
-              <h7 class="m-text12 t-center">
-                Store Opening
-				</h7>
-
-              <span class="s-text11 t-center">
-                Shop open from Monday to Sunday
-				</span>
+            <img width="20%" src={require('../img/home/T3.png')} alt="title" />
+              <h7 class="m-text12 t-center">ปฎิบัติตามขั้นตอน</h7>
+              <span class="s-text11 t-center"> มีกระบวนการจัดการและดูและที่ถูกต้องเหมาะสม	</span>
             </div>
           </div>
 
