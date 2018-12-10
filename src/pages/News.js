@@ -1,64 +1,78 @@
-import React, {Component} from 'react';
-import { Card, CardBody, Button,CardDeck, CardTitle, CardText, CardImg } from 'reactstrap';
-// import { Card, Button, CardImg, CardTitle, CardText, CardColumns,
-    // CardSubtitle, CardBody } from 'reactstrap';
+import React from 'react';
+import { Card,CardLink, CardBody, Button, CardTitle, CardText, CardImg } from 'reactstrap';
 
-// import News1 from '../img/news1.jpg';
+const CardNews = ({ images, title, subtitle, btn, date,linkk }) => <div>
+  <td width="800px">
+    <Card>
 
-class News extends Component {
+      <CardImg top width="50px" src={images} alt="Card image" />
+      <CardBody>
+        <CardTitle><h3>{title}</h3></CardTitle>
+        <CardText>{subtitle}</CardText>
+        <CardLink href={linkk}>
+          <Button color="primary" >{btn}</Button><br></br>
+        </CardLink>
+        <small className="text-muted">{date}</small>
+      </CardBody>
+    </Card>
+
+  </td>
+</div>
+
+class News extends React.Component {
+
+  render() {
+    return (
+      <div>
+        <center>
+          <table width="1500px" border="0" >
+            <tr ><td colSpan="2">. </td></tr>
+            <tr>
+              <CardNews
+                images={require('../img/news4.jpg')}
+                title="ขนส่งฯ เข้มงวดตรวจการดำเนินการของสถานตรวจสภาพรถทั่วประเทศ"
+                subtitle="ขนส่งฯ เข้มงวดตรวจการดำเนินการของสถานตรวจสภาพรถ (ตรอ.) ทั่วประเทศ สามารถตรวจสอบผลการตรวจสภาพรถผ่านเว็บไซต์ได้ทันที ..."
+                btn="Read more..."
+                linkk={"/News1"}
+                date="22 สิงหาคม 2561"
+              />
+              <td width="10px"></td>
+              <CardNews
+                images={require('../img/news2.jpg')}
+                title="คนกรุงนิยมชำระภาษีรถผ่าน สนง.ขนส่งมากที่สุด เฉพาะ ก.ค. จัดเก็บกว่า 652 ล."
+                subtitle="ขนส่งทางบก เผย ปชช.นิยมชำระภาษีรถ ผ่านสำนักงานกรมการขนส่งทางบกมากที่สุด เฉพาะ ก.ค. เดือนเดียว จัดเก็บภาษีรถในเขต กทม. ได้ 652,562,635.99 ล้าน ขณะที่การใช้บริการ ..."
+                btn="Read more..."
+                linkk={"/News2"}
+                date="26 สิงหาคม 2559"
+              />
+            </tr>
+            <tr ><td colSpan="2">. </td></tr>
+            <tr>
+              <CardNews
+                images={require('../img/news1.jpg')}
+                title="ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ."
+                subtitle="กรมการขนส่งทางบก คุมเข้ม!!! ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ. ด้วยระบบเทคโนโลยีสารสนเทศทันสมัย เชื่อมโยงผลการตรวจสภาพรถออนไลน์ทั่วประเทศ สามารถต่อภาษีรถได้โดยไม่ต้องใช้ใบรับรองการตรวจสภาพรถ คาด!!! ระบบออนไลน์จะเสร็จสมบูรณ์พร้อมให้บริการภายใน ..."
+                btn="Read more..."
+                linkk={"/News3"}
+                date="20 มิถุนายน 2559"
+              />
+              <td ></td>
+              <CardNews
+                images={require('../img/news3.jpg')}
+                title="คุมเข้มสถานที่ตรวจ ตรอ.ใช้ระบบไอทีป้องกันการปลอมเอกสาร"
+                subtitle="ขนส่งทางบกเตรียมใช้ระบบเทคโนโลยีเชื่อมโยงผลตรวจสภาพรถออนไลน์ทั่วประเทศ ต่อภาษีรถได้โดยไม่ต้องใช้ใบรับรองการตรวจสภาพรถ คาดพร้อมให้บริการภายใน ก.ค.59 นี้ ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ. ..."
+                btn="Read more..."
+                linkk={"/News4"}
+                date="16 มิถุนายน 2559"
+              />
+            </tr>
+          </table>
+        </center>
+      </div>
 
 
-    render(){
-        return(
-    
-                <CardDeck>
-      <Card>
-        <CardImg top width="500%" src={require('../img/news1.jpg')  } alt="Card image cap" />
-        <CardBody>
-          <CardTitle> ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ.</CardTitle>
-          <CardText>กรมการขนส่งทางบก คุมเข้ม!!! ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ. ด้วยระบบเทคโนโลยีสารสนเทศทันสมัย เชื่อมโยงผลการตรวจสภาพรถออนไลน์ทั่วประเทศ สามารถต่อภาษีรถได้โดยไม่ต้องใช้ใบรับรองการตรวจสภาพรถ คาด!!! ระบบออนไลน์จะเสร็จสมบูรณ์พร้อมให้บริการภายในเดือนกรกฎาคม 2559
-          </CardText>
-          <Button>Read more</Button>
-          <CardText>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </CardText>
-          
-        </CardBody>
-      </Card>
-
-      <Card>
-        <CardImg top width="100%" src={require('../img/news2.jpg')} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>คนกรุงนิยมชำระภาษีรถผ่าน สนง.ขนส่งมากสุด เฉพาะ ก.ค. จัดเก็บกว่า 652 ล.</CardTitle>
-          <CardText>ขนส่งทางบก เผย ปชช.นิยมชำระภาษีรถ ผ่านสำนักงานกรมการขนส่งทางบกมากที่สุด เฉพาะ ก.ค. เดือนเดียว จัดเก็บภาษีรถในเขต กทม. ได้ 652,562,635.99 ล้าน ขณะที่ การใช้บริการชำระภาษีรถผ่านเว็บไซต์ยังนิยมต่อเนื่อง ...
-
-</CardText>
-<Button>Read more</Button>
-          <CardText>
-            <small className="text-muted">Last updated 15 mins ago</small>
-          </CardText>
-        </CardBody>
-      </Card>
-    
-      <Card>
-         <CardImg top width="100%" src={require('../img/news3.jpg')} alt="Card image cap" />
-        <CardBody>
-          <CardTitle>ขนส่งทางบก คุมเข้มสถานที่ตรวจ ตรอ.ใช้ระบบไอทีป้องกันการปลอมเอกสาร</CardTitle>
-          <CardText>ขนส่งทางบกเตรียมใช้ระบบเทคโนโลยีเชื่อมโยงผลตรวจสภาพรถออนไลน์ทั่วประเทศ ต่อภาษีรถได้โดยไม่ต้องใช้ใบรับรองการตรวจสภาพรถ คาดพร้อมให้บริการภายใน ก.ค.59 นี้ ป้องกันการปลอมแปลงเอกสารการตรวจสภาพรถจาก ตรอ.
-
-</CardText>
-<Button>Read more</Button>
-          <CardText>
-            <small className="text-muted">Last updated 30 mins ago</small>
-          </CardText>
-        </CardBody>
-        </Card>
-    </CardDeck>
-            
-
-  
-        );
-    }
+    );
+  }
 }
 
 export default News;

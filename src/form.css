@@ -1,6 +1,8 @@
 body {
   background-image:url('./img/BG1.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 svg {
@@ -47,4 +49,8 @@ svg {
   text-align: center;
   font-size: 25px;
   color:rgb(0, 0, 0) !important;
+}
+.tableK{
+  background-color: #ffffff;
+  opacity: 0.9;
 }

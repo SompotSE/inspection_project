@@ -60,5 +60,9 @@ class Location extends Component {
 
 export default GoogleApiWrapper({
     apiKey: ("AIzaSyAFHTcbUykLDkXfK19GoXmm8EltWUbq9dM")
+<<<<<<< HEAD
 })(Location)
     
+=======
+})(Location)
+>>>>>>> 15e2bc06492eb7601755ca2fd172434d2e0f815c
