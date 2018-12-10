@@ -212,7 +212,7 @@ iframe {
     -o-animation: ball-scale infinite linear .75s;
     animation: ball-scale infinite linear .75s;
     border-radius: 100%;
-    background-color: #e65540;
+    background-color: #9966CC;
 }
 
 @-webkit-keyframes ball-scale {
@@ -537,7 +537,7 @@ iframe {
 ===========================================================*/
 .topbar {
   height: 45px;
-  background-color: #f5f5f5;
+  background-color: #9900CC;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;

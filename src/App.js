@@ -6,7 +6,6 @@ import TRO from './img/TRO.png'
 
 
 class App extends Component {
-
   render() {
     return (
       <div>
@@ -37,7 +36,7 @@ class App extends Component {
                 <nav class="menu">
                   <ul class="main_menu">
                     <li>
-                      <NavLink to="/Home" activeClassName="is-active" className="navbar-item">หน้าหลัก</NavLink>
+                      <NavLink to="/" activeClassName="is-active" className="navbar-item">หน้าหลัก</NavLink>
                     </li>
 
                     <li>
@@ -80,7 +79,7 @@ class App extends Component {
         </header>
 
         <Routing />
-        <br/><br/>
+        <br /><br />
         <Footer />
       </div>
     )

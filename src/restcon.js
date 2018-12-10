@@ -2,12 +2,13 @@ const express = require('express')
 const app = express()
 const morgan = require('morgan')
 const mysql = require('mysql')
+const port = process.env.PORT || 3000;
 
 const bodyParser = require('body-parser')
 
 app.use(bodyParser.urlencoded({extended: false}))
 
-app.use(express.static('./'))
+app.use(express.static('../public'))
 
 app.use(morgan('short'))
 
@@ -31,6 +32,7 @@ app.post('/user_create', (req, res) => {
         console.log("Inserted a new user ", results.insertedId);
         res.end()
     })
+    res.end()
 })
 
     function getConnection() {
@@ -80,6 +82,7 @@ app.get("/users", (req, res) => {
     //res.send("Nodemon auto updates when I save this file")
 })
 
-app.listen(3003, () => {
-    console.log("Server is up and listening on 3003.....")
-})
+// app.listen(5000, () => {
+//     console.log("Server is up and listening on 3003.....")
+// })
+app.listen(port, () => console.log(`Listening on port ${port}`));

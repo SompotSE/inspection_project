@@ -6,15 +6,15 @@ export default class Register extends React.Component {
         return (
             <Container>
                 
-                <Row>
+                <Row action="/user_create">
                     <Col sm="12" md={{ size: 10, offset: 1 }}><Form>
                         <FormGroup>
                             <Label for="exampleEmail">Email</Label>
-                            <Input type="email" name="email" id="exampleEmail" placeholder="Please enter an email" />
+                            <Input type="email" id="exampleEmail" name="create_first_name" placeholder="Please enter an email" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="examplePassword">Password</Label>
-                            <Input type="password" name="password" id="examplePassword" placeholder="Please enter an password" />
+                            <Input type="password" id="examplePassword"  name="create_last_name" placeholder="Please enter an password" />
                         </FormGroup>
                         <FormGroup>
                             <Label for="exampleSelect">Education Level</Label>

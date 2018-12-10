@@ -15,7 +15,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default () => (
     <Switch>
-      <Route exact path="/Home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/Knowledge" component={Knowledge} />
       <Route exact path="/Location" component={Location} />
       <Route exact path="/Rank" component={Rank} />
