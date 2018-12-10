@@ -1,10 +1,6 @@
 const express = require('express')
 const app = express()
-<<<<<<< HEAD
 const port = process.env.PORT || 5000
-=======
-const port = 5000
->>>>>>> 15e2bc06492eb7601755ca2fd172434d2e0f815c
 const morgan = require('morgan')
 const mysql = require('mysql')
 
