@@ -30,6 +30,6 @@ export default () => (
       <Route exact path="/News1" component={News1} />
       <Route exact path="/News2" component={News2} />
       <Route exact path="/News3" component={News3} />
-      <Route exact path="/News4" component={News4} />
+      <Route exact path="/News4"  component={News4} />
     </Switch>
   )

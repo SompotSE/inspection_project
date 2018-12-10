@@ -4,6 +4,7 @@ import { Card,CardLink, CardBody, Button, CardTitle, CardText, CardImg } from 'r
 const CardNews = ({ images, title, subtitle, btn, date,linkk }) => <div>
   <td width="800px">
     <Card>
+
       <CardImg top width="50px" src={images} alt="Card image" />
       <CardBody>
         <CardTitle><h3>{title}</h3></CardTitle>
@@ -38,7 +39,7 @@ class News extends React.Component {
               <td width="10px"></td>
               <CardNews
                 images={require('../img/news2.jpg')}
-                title="คนกรุงนิยมชำระภาษีรถผ่าน สนง.ขนส่งมากสุด เฉพาะ ก.ค. จัดเก็บกว่า 652 ล."
+                title="คนกรุงนิยมชำระภาษีรถผ่าน สนง.ขนส่งมากที่สุด เฉพาะ ก.ค. จัดเก็บกว่า 652 ล."
                 subtitle="ขนส่งทางบก เผย ปชช.นิยมชำระภาษีรถ ผ่านสำนักงานกรมการขนส่งทางบกมากที่สุด เฉพาะ ก.ค. เดือนเดียว จัดเก็บภาษีรถในเขต กทม. ได้ 652,562,635.99 ล้าน ขณะที่การใช้บริการ ..."
                 btn="Read more..."
                 linkk={"/News2"}
