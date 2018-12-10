@@ -13,9 +13,9 @@ class App extends Component {
           <div class="container-menu-header">
             <div class="topbar">
               <div class="topbar-social">
-                <a href="www.facebook.com" class="topbar-social-item fa fa-facebook"></a>
-                <a href="www.instagram.com" class="topbar-social-item fa fa-instagram"></a>
-                <a href="www.youtube.com" class="topbar-social-item fa fa-youtube-play"></a>
+                <a href="https://www.facebook.com/PR.DLT.NEWS/" class="topbar-social-item fa fa-facebook"></a>
+                <a href="https://www.instagram.com/explore/tags/%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%81/top/" class="topbar-social-item fa fa-instagram"></a>
+                <a href="https://www.youtube.com/watch?v=wxzoZmK7v0U" class="topbar-social-item fa fa-youtube-play"></a>
               </div>
               <span class="topbar-child1">
                 เป็นประเมินผล ตรอ. ที่มีมาตรฐานที่ดีที่สุด
@@ -48,7 +48,7 @@ class App extends Component {
                     </li>
 
                     <li>
-                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">จัดอันดับ</NavLink>
+                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">ประเมินการให้บริการ</NavLink>
                     </li>
 
                     <li>
