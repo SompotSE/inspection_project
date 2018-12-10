@@ -1,44 +1,42 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom'
 
 class login extends Component {
     render() {
         return (
             <div>
-                <center>
-                    <table width="70%">
-                        <tr>
-                            <td >
-                                <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="450px" alt="Piclogin" />
-                                </center>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Username : <input type="text" class="form-control" id="user" name="username" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                Password <input type="password" class="form-control" id="user" name="password" />
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <center>
-                                    <br />
-                                    <NavLink to="/Register">
-                                    <button type="button" class="btn btn-primary">Sign Up</button>
-                                    </NavLink>
 
-                                    <button type="button" class="btn btn-success">Summit</button>
-                                </center>
-                            </td>
-                        </tr>
+                <div class="modal fade" id="LogIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle">LOGIN</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body bgBoMo" >
+                                <center>
 
-                    </table>
-                </center>
+                                    <center>
+                                        <img src={require('../img/hulogin.png')} width="50%" alt="Piclogin" />
+                                    </center>
+                                    <div className="w3-left-align">
+                                        Username : <input type="text" class="form-control" id="user" name="username" />
+
+                                        Password <input type="password" class="form-control" id="user" name="password" />
+                                    </div>
+                                    <center>
+                                        <br />
+                                        <button type="button" class="btn btn-success">Login</button>
+                                        <span> or </span>
+                                        <a href="/Register"> Sign Up!!</a>
+                                    </center>
+
+                                </center>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         );
     }

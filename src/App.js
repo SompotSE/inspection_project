@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { Route, Switch,NavLink } from 'react-router-dom'
+import { Route, Switch, NavLink } from 'react-router-dom'
 import Routing from './routes'
 import Footer from './Footer'
 import TRO from './img/TRO.png'
+import LogIn from './pages/login';
 
 class App extends Component {
   render() {
@@ -12,19 +13,14 @@ class App extends Component {
           <div class="container-menu-header">
             <div class="topbar">
               <div class="topbar-social">
-                <a href="https://www.facebook.com/PR.DLT.NEWS/" class="topbar-social-item fa fa-facebook"></a>
-                <a href="https://www.instagram.com/explore/tags/%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%81/top/" class="topbar-social-item fa fa-instagram"></a>
-                <a href="https://www.youtube.com/watch?v=wxzoZmK7v0U" class="topbar-social-item fa fa-youtube-play"></a>
+                <a target="_blank" href="https://www.facebook.com/PR.DLT.NEWS/" class="topbar-social-item fa fa-facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/explore/tags/%E0%B8%81%E0%B8%A3%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%82%E0%B8%99%E0%B8%AA%E0%B9%88%E0%B8%87%E0%B8%97%E0%B8%B2%E0%B8%87%E0%B8%9A%E0%B8%81/top/" class="topbar-social-item fa fa-instagram"></a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=wxzoZmK7v0U" class="topbar-social-item fa fa-youtube-play"></a>
               </div>
-              <span class="topbar-child1">
-                เป็นประเมินผล ตรอ. ที่มีมาตรฐานที่ดีที่สุด
-				</span>
+              <span class="topbar-child1">เป็นประเมินผล ตรอ. ที่มีมาตรฐานที่ดีที่สุด</span>
 
               <div class="topbar-child2">
-                <span class="topbar-email">
-                  kmutnb.ac.th
-					</span>
-
+                <span class="topbar-email">kmutnb.ac.th</span>
               </div>
             </div>
 
@@ -47,19 +43,11 @@ class App extends Component {
                     </li>
 
                     <li>
-                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">จัดอันดับ</NavLink>
+                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">ประเมินการให้บริการ</NavLink>
                     </li>
 
                     <li>
                       <NavLink to="/News" activeClassName="is-active" className="navbar-item">ข่าวประชาสัมพันธ์</NavLink>
-                    </li>
-
-                    <li>
-                      <NavLink to="/Text" activeClassName="is-active" className="navbar-item">ทดสอบ</NavLink>
-                    </li>
-
-                    <li>
-
                     </li>
                   </ul>
                 </nav>
@@ -67,19 +55,20 @@ class App extends Component {
 
               <div class="header-icons">
                 <div class="header-wrapicon1 dis-block">
-                  <NavLink to="/login" activeClassName="is-active" className="navbar-item" ><img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON" /></NavLink>
-
+                  {/* <NavLink to="/login" activeClassName="is-active" className="navbar-item" ><img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON" /></NavLink> */}
+                  <a  data-toggle="modal" data-target="#LogIn"><img src="images/icons/icon-header-01.png" class="header-icon1" alt="ICON" /></a>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </header>
+        <LogIn />
         <Routing />
         <br /><br />
         <Footer />
       </div>
-      
+
     )
   }
 }
