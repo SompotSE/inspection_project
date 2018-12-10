@@ -48,7 +48,7 @@ class App extends Component {
                     </li>
 
                     <li>
-                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">ประเมินการให้บริการ</NavLink>
+                      <NavLink to="/Rank" activeClassName="is-active" className="navbar-item">จัดอันดับ</NavLink>
                     </li>
 
                     <li>
