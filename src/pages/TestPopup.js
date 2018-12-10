@@ -53,6 +53,7 @@ class ModalExample extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
+      
     );
   }
 }
