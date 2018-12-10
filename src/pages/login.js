@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom'
 
 class login extends Component {
     render() {
@@ -9,7 +10,7 @@ class login extends Component {
                         <tr>
                             <td >
                                 <center>
-                                    <img src={require('../img/hulogin.png')} width="730px" height="130px" alt="Piclogin" />
+                                    <img src={require('../img/hulogin.png')} width="730px" height="450px" alt="Piclogin" />
                                 </center>
                             </td>
                         </tr>
@@ -26,7 +27,11 @@ class login extends Component {
                         <tr>
                             <td>
                                 <center>
-                                    <br/>
+                                    <br />
+                                    <NavLink to="/Register">
+                                    <button type="button" class="btn btn-primary">Sign Up</button>
+                                    </NavLink>
+
                                     <button type="button" class="btn btn-success">Summit</button>
                                 </center>
                             </td>
