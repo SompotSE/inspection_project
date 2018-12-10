@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 import { Card, CardText, CardBody, CardLink, CardTitle, CardSubtitle } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
+import Knowledge1 from './Knowledge1';
+import Knowledge2 from './Knowledge2';
+import Knowledge3 from './Knowledge3';
+import Knowledge4 from './Knowledge4';
+import Knowledge5 from './Knowledge5';
+
 const CardEx = ({ title, subtitle, path, text, plink }) => <div>
     <td >
         <center>
@@ -8,9 +15,10 @@ const CardEx = ({ title, subtitle, path, text, plink }) => <div>
                     {/* <CardTitle>{title}</CardTitle> */}
                     <CardSubtitle>{subtitle}</CardSubtitle>
                 </CardBody>
-                <CardLink href={plink}>
+                <NavLink to={plink}>
                     <img width="100%" src={path} alt={title} />
-                </CardLink>
+                </NavLink>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target={plink}>คลิกเพื่ออ่าน</button>
             </Card>
         </center>
     </td>
@@ -28,7 +36,8 @@ class Knowledge extends React.Component {
                                 subtitle="การตรวจสอบความถูกต้องของตัวรถและเอกสารเบื้องต้น"
                                 path={require('../img/imgknowledge/1.jpg')}
                                 text="dd"
-                                plink={"/Knowledge/1"}
+                                plink={".No1"}
+
                             />
                             <td width="10px"></td>
                             <CardEx
@@ -36,7 +45,7 @@ class Knowledge extends React.Component {
                                 subtitle="การตรวจพินิจภายนอกตัวรถ และเรื่องอุปกรณ์ความปลอดภัย"
                                 path={require('../img/imgknowledge/2.jpg')}
                                 text="dbb"
-                                plink={"/Knowledge/2"}
+                                plink={".No2"}
                             />
                             <td width="10px"></td>
                             <CardEx
@@ -44,7 +53,7 @@ class Knowledge extends React.Component {
                                 subtitle="การทดสอบศูนย์ล้อหน้า และ การทดสอบการห้ามล้อ "
                                 path={require('../img/imgknowledge/3.jpg')}
                                 text="dasdf"
-                                plink={"/Knowledge/3"}
+                                plink={".No3"}
                             />
                             <td width="10px"></td>
                             <CardEx
@@ -52,7 +61,7 @@ class Knowledge extends React.Component {
                                 subtitle="การตรวจวัดโคมไฟหน้า และ การตรวจวัดระดับเสียงจากท่อไอเสีย"
                                 path={require('../img/imgknowledge/4.jpg')}
                                 text="dd"
-                                plink={"/Knowledge/4"}
+                                plink={".No4"}
                             />
                             <td width="10px"></td>
                             <CardEx
@@ -60,18 +69,13 @@ class Knowledge extends React.Component {
                                 subtitle="วิธีการตรวจวัดค่า CO HC และ การตรวจวัดค่าควันดำ"
                                 path={require('../img/imgknowledge/5.jpg')}
                                 text="dbb"
-                                plink={"/Knowledge/5"}
+                                plink={".No5"}
                             />
-                            {/* <td width="10px"></td>
-                            <CardEx
-                                title="ขั้นตอนที่ 6"
-                                subtitle="การตรวจวัดระดับเสียงจากท่อไอเสีย"
-                                path={require('../img/imgknowledge/6.jpg')}
-                                text="dasdf"
-                            /> */}
                         </tr>
                     </table>
                 </center>
+                
+                            <Knowledge1 /> <Knowledge2 /><Knowledge3 /><Knowledge4 /><Knowledge5 />
             </div>
         );
     }

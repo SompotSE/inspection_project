@@ -1,31 +1,39 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter, Input, Label, Form, FormGroup } from 'reactstrap';
-
+import Knowledge1 from './Knowledge1';
+import Knowledge2 from './Knowledge2';
 class ModalExample extends React.Component {
   render() {
     return (
-      <div class="w3-container">
-        <h2>W3.CSS Modal</h2>
-        <p>Use w3-container classes to create different sections in the modal (e.g. header & footer).</p>
-        <button onclick={"document.getElementById('id01').style.display='block'"} class="w3-button w3-black">Open Modal</button>
+      <div>
 
-        <div id="id01" class="w3-modal">
-          <div class="w3-modal-content">
-            <header class="w3-container w3-teal">
-              <span onclick="document.getElementById('id01').style.display='none'"
-                class="w3-button w3-display-topright">&times;</span>
-              <h2>Modal Header</h2>
-            </header>
-            <div class="w3-container">
-              <p>Some text..</p>
-              <p>Some text..</p>
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".No1">Large modal</button>
+
+        <div class="modal fade No1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+              <br /><br /><br />
+              <Knowledge1 />
+              <center>
+                <div >
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <br /><br /><br />
+                </div>
+              </center>
             </div>
-            <footer class="w3-container w3-teal">
-              <p>Modal Footer</p>
-            </footer>
           </div>
         </div>
-      </div>
+
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".No2">modal 2</button>
+
+        {/* <div class="modal fade No2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content"> */}
+        <Knowledge2 />
+      </div >
+
+
+
     );
   }
 }
