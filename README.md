@@ -6,7 +6,7 @@
 
 # ทีมผู้พัฒนา
 
-  1. Mrs.Chirarat  Kraithong <br/>
+  1. Miss.Chirarat  Kraithong <br/>
   [![noon.jpg](https://i.postimg.cc/rmf42Tjj/noon.jpg)](https://postimg.cc/Pp8J1BBv) <br/>
 
   2. Mr.Sirasak  Sunthorntuam <br/>
