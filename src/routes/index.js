@@ -15,16 +15,15 @@ import News3 from "../pages/News3";
 import News4 from "../pages/News4";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
-
 export default () => (
     <Switch>
-      <Route exact path="/Home" component={Home} />
+      <Route exact path="/" component={Home} />
       <Route exact path="/Knowledge" component={Knowledge} />
       {/* <Route exact path="/Location" component={Location} /> */}
       <Route exact path="/Rank" component={Rank} />
       <Route exact path="/News" component={News} />
       <Route exact path="/login" component={login} />
+      <Route exact path="/test" component={ModalExample} />
       <Route exact path="/Register" component={Register} />
       <Route exact path="/TestPopup" component={ModalExample} />
       <Route exact path="/News1" component={News1} />
