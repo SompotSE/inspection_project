@@ -6,7 +6,6 @@ class Rank extends Component {
         this.state = {
             megsage: "like",
             count: 0
-         
         };
         this.changVote = this.changVote.bind(this);
     }
