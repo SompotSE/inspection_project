@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3002
+const port = 5000
 const morgan = require('morgan')
 const mysql = require('mysql')
 
@@ -17,7 +17,7 @@ function getConnection()
     return mysql.createConnection({
         host: "192.168.33.10",
         user: "root",
-        password: "manager",
+        password: "12345678",
         database: "inspection"
     })
 }
