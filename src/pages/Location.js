@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
- import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 
- const Setlocation =() => <Marker name={'ตรอ.บางบอน3'} position={{ lat: 13.682210, lng: 100.383026 }} />
+// const Setlocation =() => <Marker name={'ตรอ.บางบอน3'} position={{ lat: 13.682210, lng: 100.383026 }} />
 class Location extends Component {
     render() {
         return (
             <div>
                 <pe>Location </pe>
                 <center>
-                     <Map google={this.props.google} 
+                    <Map google={this.props.google}
                         style={{ width: '80%', height: '80%', position: 'relative' }}
                         zoom={12}
                         initialCenter={{
@@ -36,7 +36,7 @@ class Location extends Component {
                         <Marker name={'ตรอ รักสิริ'} position={{ lat: 14.049196, lng: 100.633919 }} />
                         <Marker name={'ตรอ.ดีจัง'} position={{ lat: 14.048896, lng: 100.654915 }} />
                         <Marker name={'ตรอ.อัครวิทย์'} position={{ lat: 14.121965, lng: 100.53799 }} />
-                        <Setlocation />
+                        {/*<Setlocation /> */}
                     </Map>
                 </center>
             </div >
@@ -45,5 +45,5 @@ class Location extends Component {
 }
 
 export default GoogleApiWrapper({
-    apiKey: ("AIzaSyDwUy4FtOC4ecPk8M7stYvqur-YPfrGFhA")
-}) (Location)
+    apiKey: ("AIzaSyAFHTcbUykLDkXfK19GoXmm8EltWUbq9dM")
+})(Location)
