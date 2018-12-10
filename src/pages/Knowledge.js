@@ -41,7 +41,7 @@ class Knowledge extends React.Component {
                             <td width="10px"></td>
                             <CardEx
                                 title="ขั้นตอนที่ 3"
-                                subtitle="การทดสอบศูนย์ล้อหน้า & การทดสอบห้ามล้อ "
+                                subtitle="การทดสอบศูนย์ล้อหน้า และ การทดสอบการห้ามล้อ "
                                 path={require('../img/imgknowledge/3.jpg')}
                                 text="dasdf"
                                 plink={"/Knowledge/3"}
@@ -49,7 +49,7 @@ class Knowledge extends React.Component {
                             <td width="10px"></td>
                             <CardEx
                                 title="ขั้นตอนที่ 4"
-                                subtitle="การตรวจวัดโคมไฟหน้า & การตรวจวัดระดับเสียงจากท่อไอเสีย"
+                                subtitle="การตรวจวัดโคมไฟหน้า และ การตรวจวัดระดับเสียงจากท่อไอเสีย"
                                 path={require('../img/imgknowledge/4.jpg')}
                                 text="dd"
                                 plink={"/Knowledge/4"}
@@ -57,7 +57,7 @@ class Knowledge extends React.Component {
                             <td width="10px"></td>
                             <CardEx
                                 title="ขั้นตอนที่ 5"
-                                subtitle="วิธีการตรวจวัดค่า CO HC & การตรวจวัดค่าควันดำ"
+                                subtitle="วิธีการตรวจวัดค่า CO HC และ การตรวจวัดค่าควันดำ"
                                 path={require('../img/imgknowledge/5.jpg')}
                                 text="dbb"
                                 plink={"/Knowledge/5"}

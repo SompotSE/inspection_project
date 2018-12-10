@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "babel-loader": "^8.0.4",
+    "body-parser": "^1.18.3",
     "bootstrap": "^4.1.3",
     "file-loader": "^2.0.0",
     "google-maps-react": "^2.0.2",
+    "morgan": "^1.9.1",
     "mysql": "github:mysqljs/mysql",
     "popper.js": "^1.14.6",
     "react": "^16.6.3",
