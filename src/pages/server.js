@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 3002
+const port = process.env.PORT || 5000
 const morgan = require('morgan')
 const mysql = require('mysql')
 
@@ -69,7 +69,7 @@ app.get("/", (req, res) => {
     res.send("Hello from Sompot")
 })
 
-app.get("/location", (req, res, next) => {
+app.get("/Text", (req, res, next) => {
     const con = getConnection()
     const queryString = "SELECT * FROM location"
     con.query(queryString,(err,rows,fields) =>{
@@ -79,7 +79,7 @@ app.get("/location", (req, res, next) => {
         res.sendStatus(500)
         return
     }
-    res.send(JSON.stringify(rows))
+    res.json(rows)
     })
     con.end()
 })

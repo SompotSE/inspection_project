@@ -1,51 +1,39 @@
 import React, {Component} from 'react';
-import Modal from 'react-modal';
-export default class Test extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            users: []
-        }
-    }
 
+class Text extends Component {
+    state = { rows: [] }
+    
     componentDidMount() {
-        let self = this;
-        fetch('/location', {
-            method: 'GET'
-        }).then(function(response) {
-            if (response.status >= 400) {
-                throw new Error("Bad response from server");
-            }
-            return response.json();
-        }).then(function(data) {
-            self.setState({users: data});
-        }).catch(err => {
-        console.log('caught it!',err);
-        })
+        this.getlocation();
     }
 
+    getlocation = () =>{
+        fetch('/Text')
+        .then(res => res.json())
+        .then(rows => this.setState({rows}))
+       
+    }
     render() {
+        const {rows} = this.state;
         return (
         <div className="container"> 
             <div className="panel panel-default p50 uth-panel">
                 <table className="table table-hover">
                     <thead>
                         <tr>
-                            <th>Member name</th>
-                            <th>Member email</th>
-                            <th>Blood Group</th>
-                            <th>Phone number</th>
-                            <th>Action</th>
+                            <th>Name</th>
+                            <th>Address</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
                         </tr>
                     </thead>
                     <tbody>
-                    {this.state.users.map(member =>
-                        <tr key={member.id}>
-                        <td>{member.name} </td>
-                        <td>{member.address}</td>
-                        <td>{member.latitude}</td>
-                        <td>{member.longitude}</td>
-                        <td><a>Edit</a>|<a>Delete</a></td>
+                    {rows.map(loca =>
+                        <tr key={loca.id}>
+                        <td>{loca.name} </td>
+                        <td>{loca.address}</td>
+                        <td>{loca.latitude}</td>
+                        <td>{loca.longitude}</td>
                         </tr>
                     )}
                     </tbody>
@@ -55,3 +43,5 @@ export default class Test extends Component {
         );
     }
 }
+
+export default Text

@@ -9,6 +9,7 @@ import News from "../pages/News";
 import login from "../pages/login";
 import Register from "../pages/Register";
 import ModalExample from "../pages/TestPopup";
+import Text from "../pages/Text"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -22,6 +23,6 @@ export default () => (
       <Route exact path="/News" component={News} />
       <Route exact path="/login" component={login} />
       <Route exact path="/Register" component={Register} />
-      <Route exact path="/TestPopup" component={ModalExample} />
+      <Route exact path="/Text" component={Text} />
     </Switch>
   )

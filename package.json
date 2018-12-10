@@ -21,16 +21,22 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "2.0.5",
     "reactstrap": "^6.5.0",
-    "yarn": "^1.10.1"
+    "yarn": "^1.12.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "nodemon index.js --ignore client"
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "proxy": {
+    "/auth/google": {
+      "target": "localhost:5000"
+    }
   },
   "browserslist": [
     ">0.2%",

@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Route, Switch,NavLink } from 'react-router-dom'
 import Routing from './routes'
 import Footer from './Footer'
 import TRO from './img/TRO.png'
-
 
 class App extends Component {
 
@@ -57,7 +56,7 @@ class App extends Component {
                     </li>
 
                     <li>
-                      <NavLink to="/TestPopup" activeClassName="is-active" className="navbar-item">ทดสอบ</NavLink>
+                      <NavLink to="/Text" activeClassName="is-active" className="navbar-item">ทดสอบ</NavLink>
                     </li>
 
                     <li>
@@ -66,8 +65,6 @@ class App extends Component {
                   </ul>
                 </nav>
               </div>
-
-
 
               <div class="header-icons">
                 <div class="header-wrapicon1 dis-block">
